@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git intro</title>
+</head>
+
+<body>
+    <div style="width: 460px; margin: auto;">
+        <img src="./img.avif" width="450px" alt="">
+        <h3>Git Commands and their uses</h3>
+        <p><strong>Git is a version control system</strong> that records changes to a file or set of files over time so
+            that we can recall specific version
+            later and save them on a remote repository like Github.
+        </p>
+        <p>To use this version control system first we need to installed it
+            in our local system.</p>
+        <p><strong>Repository is a directory or storage space where our projects can live</strong></p>
+        <p>Below are the git commands and their corresponding functionalities:</p>
+        <ul>
+            <li><b>git --version</b>
+                <p>It is used to check the git version installed
+                    in our system.
+                </p>
+            </li>
+            <li><b>git init</b>
+                <p>Initialize a new, empty repository for our project
+                    in our working directory.
+                </p>
+            </li>
+            <li><b>git config --global user.email "you@example.com"</b>
+                <p>Used to set the user email id which is used as identification while commiting the code
+                </p>
+            </li>
+            <li><b>git config --global user.name "Your Name"</b>
+                <p>Used to set the user name which is used as identification while commiting the code
+                </p>
+            </li>
+            <li><b>git status</b>
+                <p>Used to know the status of our code files,whether they are commited,staged or untracked.
+                </p>
+            </li>
+            <li><b>git add [filename]</b>
+                <p>Used to add untracked code file, means file from local sytem moved to repository .
+                </p>
+            </li>
+            <li><b>git add .</b>
+                <p>Used to add all the code files from local system to repository .
+                </p>
+            </li>
+            <li><b>git commit -m "[message]"</b>
+                <p>Commit messages are a way of communication between team members,
+                    where message is given to identify the recent changesor making a log of the changes.
+                </p>
+            </li>
+            <li><b>git commit -m "[message]"</b>
+                <p>Commit messages are a way of communication between team members,
+                    where message is given to identify the recent changesor making a log of the changes.
+                </p>
+            </li>
+            <li><b>git log</b>
+                <p>Used to check the list of commits we have done so far.
+                </p>
+            </li>
+            <li><b>git reset --hard "[SHA number]"</b>
+                <p>
+                    [SHA number is Secured Hash Algorithm number.It is unique for each commit.]
+                    It is used to delete recent commit changes and go back to the previous commit working code
+                    by that particular SHA number.
+
+                </p>
+            </li>
+            <li><b>git reset --soft[SHA number]</b>
+                <p>Used to go back to the previous com ited code along with the latest code change still available.
+                    Git log will only show the previous commited logs but the recent commited log will not be there even
+                    chnages will be available in this commit.
+                </p>
+            </li>
+            <li><b>git remote add origin [url]</b>
+                <p>Used to set the origin location on remote repository where the code needs to pushed from local repository.
+                </p>
+            </li>
+            <li><b>git branch -M main</b>
+                <p>Sets the branch name as main.
+                </p>
+            </li>
+            <li><b>git push -u origin main</b>
+                <p>Used to push the code from local system to remote repository at the specified URLs origin's branch.
+                </p>
+            </li>
+            <li><b>git clone url</b>
+                <p>Used to copy the code from remote to our local system.
+                </p>
+            </li>
+            <li><b>git pull</b>
+                <p> used to fetch and download content from a remote repository and immediately 
+                    update the local repository to match that content.
+                </p>
+            </li>
+            <li><b>git branch</b>
+                <p>Used to check which are the branches and which is the current branch.
+                </p>
+            </li>
+            <li><b>git branch [branchname]</b>
+                <p>Used to create a branch with the mentioned branch name.
+                </p>
+            </li>
+            <li><b>git merge branchname</b>
+                <p>It joins branches. It combines multiple sequences of commits into one.
+                </p>
+            </li>
+            <li><b>git checkout branchname</b>
+                <p>Used to checkout from current branch and move on to the mentioned branch.
+                </p>
+            </li>
+            
+            
+        </ul>
+    </div>
+</body>
+
+</html>
